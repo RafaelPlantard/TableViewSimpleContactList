@@ -31,8 +31,8 @@
 		53AB85901C42EFA100D83036 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53AB85921C42EFA100D83036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53AB85931C42EFA100D83036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		53AB85951C42EFA100D83036 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		53AB85961C42EFA100D83036 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53AB85951C42EFA100D83036 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		53AB85961C42EFA100D83036 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		53AB85991C42EFA100D83036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53AB859B1C42EFA100D83036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AB859E1C42EFA100D83036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,10 +81,9 @@
 		53AB858E1C42EFA100D83036 /* TableViewSimpleContactList */ = {
 			isa = PBXGroup;
 			children = (
+				53AB85B41C42EFAA00D83036 /* Controllers */,
 				53AB85921C42EFA100D83036 /* AppDelegate.h */,
 				53AB85931C42EFA100D83036 /* AppDelegate.m */,
-				53AB85951C42EFA100D83036 /* ViewController.h */,
-				53AB85961C42EFA100D83036 /* ViewController.m */,
 				53AB85981C42EFA100D83036 /* Main.storyboard */,
 				53AB859B1C42EFA100D83036 /* Assets.xcassets */,
 				53AB859D1C42EFA100D83036 /* LaunchScreen.storyboard */,
@@ -109,6 +108,15 @@
 				53AB85AB1C42EFA100D83036 /* Info.plist */,
 			);
 			path = TableViewSimpleContactListTests;
+			sourceTree = "<group>";
+		};
+		53AB85B41C42EFAA00D83036 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53AB85951C42EFA100D83036 /* ViewController.h */,
+				53AB85961C42EFA100D83036 /* ViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

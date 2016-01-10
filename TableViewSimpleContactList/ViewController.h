@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/*! @brief The view controller for home view on app. */
 @interface ViewController : UIViewController
 
-
 @end
-
