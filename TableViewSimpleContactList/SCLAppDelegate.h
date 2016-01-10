@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /*! @brief The main entry for the app. */
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface SCLAppDelegate : UIResponder <UIApplicationDelegate>
 
 /*! @brief The window for app. */
 @property (strong, nonatomic) UIWindow *window;

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 /*! @brief The view controller for home view on app. */
-@interface ViewController : UIViewController
+@interface SCLViewController : UIViewController
 
 @end

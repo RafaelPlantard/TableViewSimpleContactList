@@ -6,13 +6,13 @@
 //  Copyright © 2016 Data Empire. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SCLAppDelegate.h"
 
-@interface AppDelegate ()
+@interface SCLAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SCLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

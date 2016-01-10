@@ -6,13 +6,13 @@
 //  Copyright © 2016 Data Empire. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SCLViewController.h"
 
-@interface ViewController ()
+@interface SCLViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SCLViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
