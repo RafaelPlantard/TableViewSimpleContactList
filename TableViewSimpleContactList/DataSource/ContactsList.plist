@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contacts</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Rafael da Silva Ferreira</string>
+			<key>mobilePhone</key>
+			<string>(11) 9 5201-7244</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ana Júlia Xavier Ferreira</string>
+			<key>mobilePhone</key>
+			<string>(63) 9244-6456</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rozangela Martins da Silva</string>
+			<key>mobilePhone</key>
+			<string>(63) 9250-4900</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Hortência Martins da Silva</string>
+			<key>mobilePhone</key>
+			<string>(91) 9 9999-9999</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Adeline de Nazaré Martins da Silva</string>
+			<key>mobilePhone</key>
+			<string>(63) 8888-8888</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Gustavo Aires Matos</string>
+			<key>mobilePhone</key>
+			<string>(63) 7777-7777</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Lucas Marinho Gomes</string>
+			<key>mobilePhone</key>
+			<string>(63) 9271-8411</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Douglas da Silva Ferreira</string>
+			<key>mobilePhone</key>
+			<string>(63) 6666-6666</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Raimundo do Espírito Santo Damasceno Ferreira</string>
+			<key>mobilePhone</key>
+			<string>(63) 5555-5555</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Fernanda Kowalski</string>
+			<key>mobilePhone</key>
+			<string>(11) 9 4444-4444</string>
+		</dict>
+	</array>
+</dict>
+</plist>

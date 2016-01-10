@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		53AB85911C42EFA100D83036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB85901C42EFA100D83036 /* main.m */; };
 		53AB85941C42EFA100D83036 /* SCLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB85931C42EFA100D83036 /* SCLAppDelegate.m */; };
-		53AB85971C42EFA100D83036 /* SCLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB85961C42EFA100D83036 /* SCLViewController.m */; };
 		53AB859A1C42EFA100D83036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AB85981C42EFA100D83036 /* Main.storyboard */; };
 		53AB859C1C42EFA100D83036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AB859B1C42EFA100D83036 /* Assets.xcassets */; };
 		53AB859F1C42EFA100D83036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AB859D1C42EFA100D83036 /* LaunchScreen.storyboard */; };
 		53AB85AA1C42EFA100D83036 /* TableViewSimpleContactListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB85A91C42EFA100D83036 /* TableViewSimpleContactListTests.m */; };
+		53AB85B71C42F5CE00D83036 /* ContactsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53AB85B61C42F5CE00D83036 /* ContactsList.plist */; };
+		53AB85BB1C42F93100D83036 /* SCLContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB85BA1C42F93100D83036 /* SCLContact.m */; };
+		53AB85BE1C42FA1D00D83036 /* SCLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB85BD1C42FA1D00D83036 /* SCLViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +33,6 @@
 		53AB85901C42EFA100D83036 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53AB85921C42EFA100D83036 /* SCLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLAppDelegate.h; sourceTree = "<group>"; };
 		53AB85931C42EFA100D83036 /* SCLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLAppDelegate.m; sourceTree = "<group>"; };
-		53AB85951C42EFA100D83036 /* SCLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCLViewController.h; path = ../SCLViewController.h; sourceTree = "<group>"; };
-		53AB85961C42EFA100D83036 /* SCLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SCLViewController.m; path = ../SCLViewController.m; sourceTree = "<group>"; };
 		53AB85991C42EFA100D83036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53AB859B1C42EFA100D83036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AB859E1C42EFA100D83036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,11 @@
 		53AB85A51C42EFA100D83036 /* TableViewSimpleContactListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSimpleContactListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AB85A91C42EFA100D83036 /* TableViewSimpleContactListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSimpleContactListTests.m; sourceTree = "<group>"; };
 		53AB85AB1C42EFA100D83036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AB85B61C42F5CE00D83036 /* ContactsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ContactsList.plist; sourceTree = "<group>"; };
+		53AB85B91C42F93100D83036 /* SCLContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLContact.h; sourceTree = "<group>"; };
+		53AB85BA1C42F93100D83036 /* SCLContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLContact.m; sourceTree = "<group>"; };
+		53AB85BC1C42FA1D00D83036 /* SCLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLViewController.h; sourceTree = "<group>"; };
+		53AB85BD1C42FA1D00D83036 /* SCLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +68,9 @@
 		53AB85831C42EFA100D83036 = {
 			isa = PBXGroup;
 			children = (
+				53AB858D1C42EFA100D83036 /* Products */,
 				53AB858E1C42EFA100D83036 /* TableViewSimpleContactList */,
 				53AB85A81C42EFA100D83036 /* TableViewSimpleContactListTests */,
-				53AB858D1C42EFA100D83036 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				53AB85B41C42EFAA00D83036 /* Controllers */,
+				53AB85B51C42F59800D83036 /* DataSource */,
+				53AB85B81C42F91C00D83036 /* Models */,
+				53AB858F1C42EFA100D83036 /* Supporting Files */,
+				53AB859B1C42EFA100D83036 /* Assets.xcassets */,
+				53AB85A01C42EFA100D83036 /* Info.plist */,
+				53AB859D1C42EFA100D83036 /* LaunchScreen.storyboard */,
+				53AB85981C42EFA100D83036 /* Main.storyboard */,
 				53AB85921C42EFA100D83036 /* SCLAppDelegate.h */,
 				53AB85931C42EFA100D83036 /* SCLAppDelegate.m */,
-				53AB85981C42EFA100D83036 /* Main.storyboard */,
-				53AB859B1C42EFA100D83036 /* Assets.xcassets */,
-				53AB859D1C42EFA100D83036 /* LaunchScreen.storyboard */,
-				53AB85A01C42EFA100D83036 /* Info.plist */,
-				53AB858F1C42EFA100D83036 /* Supporting Files */,
 			);
 			path = TableViewSimpleContactList;
 			sourceTree = "<group>";
@@ -98,14 +105,14 @@
 			children = (
 				53AB85901C42EFA100D83036 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		53AB85A81C42EFA100D83036 /* TableViewSimpleContactListTests */ = {
 			isa = PBXGroup;
 			children = (
-				53AB85A91C42EFA100D83036 /* TableViewSimpleContactListTests.m */,
 				53AB85AB1C42EFA100D83036 /* Info.plist */,
+				53AB85A91C42EFA100D83036 /* TableViewSimpleContactListTests.m */,
 			);
 			path = TableViewSimpleContactListTests;
 			sourceTree = "<group>";
@@ -113,10 +120,27 @@
 		53AB85B41C42EFAA00D83036 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				53AB85951C42EFA100D83036 /* SCLViewController.h */,
-				53AB85961C42EFA100D83036 /* SCLViewController.m */,
+				53AB85BC1C42FA1D00D83036 /* SCLViewController.h */,
+				53AB85BD1C42FA1D00D83036 /* SCLViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		53AB85B51C42F59800D83036 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				53AB85B61C42F5CE00D83036 /* ContactsList.plist */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		53AB85B81C42F91C00D83036 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53AB85B91C42F93100D83036 /* SCLContact.h */,
+				53AB85BA1C42F93100D83036 /* SCLContact.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +229,7 @@
 				53AB859F1C42EFA100D83036 /* LaunchScreen.storyboard in Resources */,
 				53AB859C1C42EFA100D83036 /* Assets.xcassets in Resources */,
 				53AB859A1C42EFA100D83036 /* Main.storyboard in Resources */,
+				53AB85B71C42F5CE00D83036 /* ContactsList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AB85971C42EFA100D83036 /* SCLViewController.m in Sources */,
+				53AB85BB1C42F93100D83036 /* SCLContact.m in Sources */,
 				53AB85941C42EFA100D83036 /* SCLAppDelegate.m in Sources */,
 				53AB85911C42EFA100D83036 /* main.m in Sources */,
+				53AB85BE1C42FA1D00D83036 /* SCLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +279,7 @@
 				53AB85991C42EFA100D83036 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		53AB859D1C42EFA100D83036 /* LaunchScreen.storyboard */ = {
@@ -261,6 +288,7 @@
 				53AB859E1C42EFA100D83036 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +441,7 @@
 				53AB85B01C42EFA100D83036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53AB85B11C42EFA100D83036 /* Build configuration list for PBXNativeTarget "TableViewSimpleContactListTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +450,7 @@
 				53AB85B31C42EFA100D83036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
