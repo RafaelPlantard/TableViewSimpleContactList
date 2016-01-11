@@ -38,8 +38,15 @@ static NSString *const ContactCacheIdCell = @"ContactCacheId";
 
 #pragma mark - UITableViewDelegate methods
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [contactsList removeObjectAtIndex:indexPath.row];
+    
+    [_contactsTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SCLContact *c = [contactsList objectAtIndex:indexPath.row];
+    
     NSString *message = [NSString stringWithFormat:@"Name: %@ \nMobile phone: %@", c.name, c.mobilePhone];
     
     UIAlertAction *continueAction = [UIAlertAction actionWithTitle:@"continue" style:UIAlertActionStyleCancel handler:nil];
@@ -52,11 +59,13 @@ static NSString *const ContactCacheIdCell = @"ContactCacheId";
     [_contactsTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-#pragma mark - UITableViewDataSource methods
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return contactsList.count;
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    
+    [_contactsTableView setEditing:editing animated:animated];
 }
+
+#pragma mark - UITableViewDataSource methods
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [_contactsTableView dequeueReusableCellWithIdentifier:ContactCacheIdCell];
@@ -72,18 +81,24 @@ static NSString *const ContactCacheIdCell = @"ContactCacheId";
     return cell;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return contactsList.count;
+}
+
 #pragma mark - UIViewController methods
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
     [self loadContactList];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 @end
